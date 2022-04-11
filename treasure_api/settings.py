@@ -35,7 +35,7 @@ ALLOWED_HOSTS = ['localhost', 'treasure-trash-api.herokuapp.com']
 INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
-    'items_api', #items = free stuff
+    'items_api', #items app = free stuff
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
