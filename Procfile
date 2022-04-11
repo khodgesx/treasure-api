@@ -1,0 +1,1 @@
+web: gunicorn treasure_api.wsgi
