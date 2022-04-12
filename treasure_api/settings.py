@@ -92,7 +92,7 @@ DATABASES = {
     # }
     'default': {
        'ENGINE': 'django.db.backends.postgresql',
-       'NAME': 'django_treasure_api',
+       'NAME': 'treasure_img_api',
        'USER': 'postgres',
        'PASSWORD': '666b',
        'HOST': 'localhost'
