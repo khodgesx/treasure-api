@@ -17,7 +17,14 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 
+#to access media settings
+from django.conf import settings
+from django.conf.urls.static import static
+
+
 urlpatterns = [
     path('api/items/', include('items_api.urls')), 
     path('admin/', admin.site.urls),
-]
+] 
+#media folder 
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
