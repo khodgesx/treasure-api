@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-nxi^gus^aeddt=q%hyipe2^0kd02ilg2ifnli07-tj&k%afar)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'treasure-trash-api.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'treasure-trash-api.herokuapp.com', '*']
 
 
 # Application definition
@@ -56,7 +56,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 CORS_ALLOW_ALL_ORIGINS = True # add this
+
+
 
 ROOT_URLCONF = 'treasure_api.urls'
 
@@ -141,3 +144,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # add this
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
