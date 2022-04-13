@@ -11,7 +11,7 @@ from rest_framework.response import Response
 from rest_framework import status
 
 class ItemList(generics.ListCreateAPIView):
-    queryset = Item.objects.all().order_by('id') # tell django how to retrieve all objects from the DB, order by id ascending
+    queryset = Item.objects.all().order_by('-id') # tell django how to retrieve all objects from the DB, order by id ascending
     serializer_class = ItemSerializer # tell django what serializer to use
 
 class ItemDetail(generics.RetrieveUpdateDestroyAPIView):
