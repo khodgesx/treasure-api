@@ -10,7 +10,7 @@ class Item(models.Model):
     img = models.ImageField(
         upload_to='uploads/',
         max_length=2000,
-        default='uploads/default.jpg',
+        default='default.jpg',
         blank=True)
     location = models.CharField(max_length=100) 
     available = models.BooleanField()
