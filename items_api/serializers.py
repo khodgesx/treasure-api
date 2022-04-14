@@ -5,4 +5,3 @@ class ItemSerializer(serializers.ModelSerializer): # serializers.ModelSerializer
     class Meta:
         model = Item # tell django which model to use
         fields = ('id', 'title', 'category', 'details', 'amount', 'img', 'location', 'available',) # tell django which fields to include
-#'img',
