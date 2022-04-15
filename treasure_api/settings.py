@@ -35,15 +35,8 @@ ALLOWED_HOSTS = ['localhost', 'treasure-trash-api.herokuapp.com', '*']
 INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
-    # 'rest_framework.authtoken', # new
-    # 'rest_auth', # new
-    # 'django.contrib.sites', # new
-    # 'allauth', # new
-    # 'allauth.account', # new
-    # 'allauth.socialaccount', # new
-    # 'rest_auth.registration', # new
+    'cloudinary',
     'items_api', #items app = free stuff
-    # 'users', #users app
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -160,6 +153,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CLOUDINARY_STORAGE = {
+'CLOUD_NAME': 'dmc4kghoi',
+'API_KEY': '522883776725447',
+'API_SECRET': 'NsWRF4TLjZsXiKciJiwxZ-v-CR8',
+}
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # #user model
 # AUTH_USER_MODEL = 'users.CustomUser'
