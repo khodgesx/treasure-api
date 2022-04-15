@@ -28,7 +28,7 @@ urlpatterns = [
     # path('api/v1/users/', include('users.urls')),
 ] 
 #media folder 
-# urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 #adding this:  
 from django.views.static import serve
