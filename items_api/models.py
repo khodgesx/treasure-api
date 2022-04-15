@@ -8,7 +8,6 @@ class Item(models.Model):
     amount = models.IntegerField()
     img = models.ImageField(
         upload_to='uploads/',
-        max_length=2000,
         default='uploads/default.jpg',
         blank=True)
     location = models.CharField(max_length=100) 
