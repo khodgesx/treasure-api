@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) # edit th
 SECRET_KEY = 'django-insecure-nxi^gus^aeddt=q%hyipe2^0kd02ilg2ifnli07-tj&k%afar)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 'treasure-trash-api.herokuapp.com', '*']
 
