@@ -148,13 +148,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # add this
 
-#adding this:
-STATICFILES_DIRS = (
-  os.path.join(BASE_DIR, 'build/static'),
-  os.path.join(BASE_DIR, 'build/media'),
-  os.path.join(BASE_DIR, 'media/uploads')
-  )
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 # # Base url to serve media files
 #directs the url to the media folder where our images will be
 MEDIA_URL = '/media/'
