@@ -6,10 +6,10 @@ class Item(models.Model):
     category = models.CharField(max_length=40)
     details = models.CharField(max_length=100) 
     amount = models.IntegerField()
-    img = models.ImageField(
-        upload_to='uploads/',
-        default='uploads/default.jpg',
-        blank=True)
+    # img = models.ImageField(
+    #     upload_to='uploads/',
+    #     default='uploads/default.jpg',
+    #     blank=True)
     image = models.CharField(max_length=2000, default='https://i.imgur.com/3cHAFsx.jpg')
     
     location = models.CharField(max_length=100) 

@@ -4,4 +4,5 @@ from .models import Item
 class ItemSerializer(serializers.ModelSerializer): # serializers.ModelSerializer just tells django to convert sql to JSON
     class Meta:
         model = Item # tell django which model to use
-        fields = ('id', 'title', 'category', 'details', 'amount', 'img', 'image', 'location', 'available',) # tell django which fields to include
+        fields = ('id', 'title', 'category', 'details', 'amount',  'image', 'location', 'available',) # tell django which fields to include
+#'img',
