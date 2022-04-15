@@ -10,6 +10,8 @@ class Item(models.Model):
         upload_to='uploads/',
         default='uploads/default.jpg',
         blank=True)
+    image = models.CharField(max_length=2000, default='https://i.imgur.com/3cHAFsx.jpg')
+    
     location = models.CharField(max_length=100) 
     available = models.BooleanField()
     #user?
